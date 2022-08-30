@@ -29,7 +29,7 @@ const Card = ({ item }) => {
               {item.catagory}
             </span>
           </p>
-          <a href="#" className="block mt-1">
+          <a href="/#" className="block mt-1">
             <p className="text-xl font-semibold text-gray-900">
               {item.title}
             </p>
