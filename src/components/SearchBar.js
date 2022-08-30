@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+
 import searchIcon from './../assets/search.svg'
 import { useDispatch } from 'react-redux';
 import { filterSearch } from '../redux/filters/actions';
@@ -7,7 +7,6 @@ import { filterSearch } from '../redux/filters/actions';
 const Search = () => {
 
 
-  const [input, setInput] = useState('');
   const dispatch = useDispatch();
 
 
@@ -42,6 +41,7 @@ const Search = () => {
           placeholder="Search"
           onChange={(e) => debounceGetKey(e)}
         />
+        <img src={searchIcon} alt="" />
       </form>
 
     </div>
